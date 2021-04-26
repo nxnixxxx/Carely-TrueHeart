@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ibbeamm">
+    <title>Carely</title>
+
+    <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+    <!-- Carely CSS -->
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/signin.css">
+    <link rel="stylesheet" href="/static/css/signup.css">
+
+</head>
+<body class="d-flex flex-column w-100 h-100 mx-auto p-4 chaba-bg">
+  <header class="mb-auto">
+    <nav class="nav d-flex flex-row align-items-center justify-content-evenly">
+      <a class="navbar-brand float-md-start mb-0" href="#">
+        <img src="static/img/logo.PNG" alt="" width="190" height="80">
+      </a>
+      <a class="nav-link nav__link active" href="/" data-link>Home</a>
+      <a class="nav-link nav__link" href="/about" data-link>About</a>
+      <a class="nav-link nav__link" href="/search" data-link>Search</a>
+      <a class="nav-link nav__link" href="/help" data-link>Help Center</a>
+      <a class="nav-link nav__link" href="/signin" data-link>Sign up/Login</a>
+      <a class="nav-link nav__link" href="/signout" data-link hidden>Logout</a>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+  <script type="module" src="/static/js/index.js"></script>
+
+  <footer class="d-flex mt-auto text-black-50 justify-content-center"></footer>
+</body>
+</html>
