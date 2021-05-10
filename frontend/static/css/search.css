@@ -1,0 +1,38 @@
+#search{
+    width: 45%;
+    background-color: #fcfcff;
+    opacity: 0.9;
+    border: solid #fcfcfc 1px;
+    border-radius: 45px;
+}
+
+.form-search {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    max-height: 340px;
+    overflow-y: scroll;
+}
+
+.form-search input[type="text"] {
+    margin-bottom: 10px;
+    border-radius: 25px;
+    text-indent: 10px;
+  }
+  
+
+.d-flex h1{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#next{
+    height: 42px;
+    width: 117px;
+    border: solid #5D1616 1px;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #5D1616;
+    color: white;
+}
