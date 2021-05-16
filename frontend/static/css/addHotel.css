@@ -1,15 +1,16 @@
-.form-addHotel {
-    width: 100%;
-    max-width: 100%;
-    max-height: 340px;
-  }
-  
 #addHotel{
-    width: 50%;
+    width: 55%;
     background-color: #fcfcff;
     opacity: 0.9;
-    border: solid #fcfcfc 0.5px;
+    border: solid #fcfcfc 1px;
     border-radius: 45px;
+}
+
+.form-addHotel {
+    width: 100%;
+    padding: 15px;
+    max-height: 340px;
+    overflow-y: scroll;
 }
   
   
