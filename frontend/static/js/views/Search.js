@@ -254,7 +254,7 @@ var q12 = `
         </div>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="q12" id="a4" value="option4">
-            <label class="form-check-label" for="q12"> <=1000฿ </label>
+            <label class="form-check-label" for="q12"> ≤1000฿ </label>
         </div>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="q12" id="a4" value="option4">

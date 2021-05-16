@@ -1,0 +1,83 @@
+.form-addHotel {
+    width: 100%;
+    max-width: 100%;
+    max-height: 340px;
+  }
+  
+#addHotel{
+    width: 50%;
+    background-color: #fcfcff;
+    opacity: 0.9;
+    border: solid #fcfcfc 0.5px;
+    border-radius: 45px;
+}
+  
+  
+.d-flex h1{
+    color: black;  
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-addHotel .form-check{
+    margin-left: 15px;
+}
+  
+.form-addHotel input[type="text"] {
+    margin-bottom: 7px;
+    border-radius: 25px;
+    text-indent: 20px;
+}
+
+.form-addHotel input[type="number"] {
+    margin-bottom: 7px;
+    border-radius: 25px;
+    text-indent: 20px;
+    -webkit-appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-addHotel textarea{
+    margin-bottom: 7px;
+    border-radius: 25px;
+    text-indent: 20px;
+}
+
+.form-addHotel #locate{
+    height: 120px;
+    resize: none;
+}
+
+textarea:focus:not([readonly]) {
+    border: 2px solid #5D1616;
+    box-shadow: 0 0 0 0 #5D1616;
+  }
+
+#btn-addHotel{
+    width: 150px;
+    height: 50px;
+    border: solid #5D1616 1px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #5D1616;
+    color: white;
+}
+
+
+#btn-addHotel:hover{
+    background-color: #5D1616 !important;
+    color: white;
+    border: solid #5D1616 2px !important;
+}
+
+#btn-addHotel:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #7D4545;
+}
+
+

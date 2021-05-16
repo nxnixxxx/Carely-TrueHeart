@@ -21,24 +21,27 @@
     <link rel="stylesheet" href="/static/css/signup.css">
     <link rel="stylesheet" href="/static/css/search.css">
     <link rel="stylesheet" href="/static/css/help.css">
+    <link rel="stylesheet" href="/static/css/addHotel.css">
 
 </head>
 <body class="d-flex flex-column w-100 h-100 mx-auto p-4 chaba-bg">
   <header class="mb-auto">
-    <nav class="nav d-flex flex-row align-items-center justify-content-evenly">
+    <nav id="nav-header" class="nav d-flex flex-row align-items-center justify-content-evenly">
       <a class="navbar-brand float-md-start mb-0" href="#">
         <img src="static/img/logo.PNG" alt="" width="190" height="80">
       </a>
-      <a class="nav-link nav__link active" href="/" data-link>Home</a>
-      <a class="nav-link nav__link" href="/about" data-link>About</a>
-      <a class="nav-link nav__link" href="/search" data-link>Search</a>
-      <a class="nav-link nav__link" href="/help" data-link>Help Center</a>
-      <a class="nav-link nav__link" href="/signin" data-link>Sign up/Login</a>
-      <a class="nav-link nav__link" href="/signout" data-link hidden>Logout</a>
+      <a id="nav-home" class="nav-link nav__link active" href="/" data-link>Home</a>
+      <a id="nav-about" class="nav-link nav__link" href="/about" data-link>About</a>
+      <a id="nav-search" class="nav-link nav__link" href="/search" data-link>Search</a>
+      <a id="nav-help" class="nav-link nav__link" href="/help" data-link>Help Center</a>
+      <a id="nav-signin" class="nav-link nav__link" href="/signin" data-link>Sign up/Login</a>
+      <a id="nav-signout" class="nav-link nav__link" href="/signout" data-link hidden>Logout</a>
     </nav>
   </header>
 
   <main id="app"></main>
+  
+  <script src="/static/js/admin-view.js"></script>
   <script type="module" src="/static/js/index.js"></script>
 
   <footer class="d-flex mt-auto text-black-50 justify-content-center"></footer>

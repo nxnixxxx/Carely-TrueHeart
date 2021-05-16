@@ -11,7 +11,7 @@ export default class extends AbstractView {
         <div id="search" class="container p-5">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <h1>Help Center</h1>
-            </div> <br>
+            </div>
 
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <div class="d-flex flex-row w-100 help-content">
@@ -19,7 +19,7 @@ export default class extends AbstractView {
                         <img src="static/img/icon_tel.png" alt="" width="25" height="25">
                     </div>
                     <div class="form-check form-check-inline">
-                        <h5> 094-493-6661 </h5>
+                        <h5>094-4936661</h5>
                     </div>
                 </div>
 
