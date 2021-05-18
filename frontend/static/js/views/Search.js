@@ -292,7 +292,7 @@ export default class extends AbstractView {
                         ${q12}
                     </div><br> 
                     <div class="d-flex">
-                        <button id="next" type="submit">Next</button>
+                        <button id="next" type="submit">Search</button>
                     </div>  
                 </div>
             </div>
