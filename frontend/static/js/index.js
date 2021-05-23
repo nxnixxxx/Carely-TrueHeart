@@ -57,9 +57,23 @@ const router = async () => {
     document.querySelector("#app").innerHTML = await view.getHtml();
 };
 
+const setActive = () => {
+    // Set menu active class
+    var header = document.getElementById("nav-header");
+    var aTags = header.getElementsByClassName("nav-link");
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+}
+
 window.addEventListener("popstate", router);
 
 document.addEventListener("DOMContentLoaded", () => {
+    setActive();
     document.body.addEventListener("click", e => {
         if (e.target.matches("[data-link]")) {
             e.preventDefault();

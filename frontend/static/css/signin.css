@@ -1,4 +1,4 @@
-.form-signin {
+#form-signin {
   width: 100%;
   max-width: 90%;
   padding: 15px;
@@ -23,13 +23,13 @@ input:focus:not([readonly]) {
     margin-bottom: 15px;
 }
 
-.form-signin input[type="email"] {
+#form-signin #username {
   margin-bottom: 7px;
   border-radius: 25px;
   text-indent: 10px;
 }
 
-.form-signin input[type="password"] {
+#form-signin #password{
   margin-bottom: 10px;
   border-radius: 25px;
   text-indent: 10px;

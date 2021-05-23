@@ -1,9 +1,13 @@
 import AbstractView from "./AbstractView.js";
 
+
 export default class extends AbstractView {
     constructor(params) {
         super(params);
         this.setTitle("Help");
+        
+       
+       
     }
 
     async getHtml() {
@@ -50,9 +54,8 @@ export default class extends AbstractView {
                     </div>
                 </div>
             </div>
-               
-
               
+            <div id="map"></div>
         </div>    
         `;
     }
