@@ -25,11 +25,11 @@
 }
 
 #btn-detailHotel{
-    width: 150px;
-    height: 50px;
+    width: 120px;
+    height: 35px;
     border: solid #5D1616 1px;
     border-radius: 25px;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #5D1616;
     color: white;
 }

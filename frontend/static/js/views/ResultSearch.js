@@ -78,7 +78,7 @@ import AbstractView from "./AbstractView.js";
         return `
         <div id="result" class="container p-5">
             <div class="d-flex flex-column justify-content-center align-items-center">
-                <h1>ResultSearch</h1>
+                <h1>Result Search</h1>
                 <div class="result-search">
                     ${locate}
                     ${displayResult}
