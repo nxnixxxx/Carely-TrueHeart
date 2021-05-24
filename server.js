@@ -5,18 +5,18 @@ const dotenv = require("dotenv");
 
 // Init dotenv
 dotenv.config();
-
-// Init express
 const app = express();
-
 app.use("/static", express.static(path.resolve(__dirname, "frontend", "static")));
-
-// Run frontend
-app.get("/*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "frontend", "index.html"));
+app.use(express.json());
+app.get("/*", (request, ressponse) => {
+    ressponse.sendFile(path.resolve(__dirname, "frontend", "index.html"));
 });
 
-// Open port
+app.post("/auth", (request, ressponse) => {
+    console.log("Authen Page")
+    console.log("post : " + JSON.stringify(request.headers));
+    ressponse.sendFile(path.resolve(__dirname, "frontend", "index.html"));
+});
 app.listen(3000, () => console.log("Server running ... http://localhost:3000/"));
 
 // Connect DB
@@ -29,6 +29,3 @@ mongoose.connect(
     () => {
     console.log("Mongoose Connected!!");
 });
-
-// Middleware
-app.use(express.json());

@@ -13,31 +13,31 @@ export default class extends AbstractView {
                     <h1>Sign Up</h1>
                 </div>
                 <div class="d-flex flex-row justify-content-center w-100 align-items-center">
-                    <form id="form-signup" class="needs-validation" novalidate>
+                    <form id="form-signup" class="needs-validation" novalidate method="post" action="/auth">
                         <div class="form-floating">
-                            <input id="username"type="text" class="form-control" placeholder="Username" required>
+                            <input name="username"type="text" class="form-control" placeholder="Username" required>
                             <label for="username">Username</label>
                         </div>
                         <div class="form-floating">
-                            <input id="password" type="text" class="form-control" placeholder="Password" required>
+                            <input name="password" type="text" class="form-control" placeholder="Password" required>
                             <label for="password">Password</label>
                         </div>
                         <div class="form-floating">
-                            <input id="name" type="text" class="form-control" placeholder="Name" required>
+                            <input name="name" type="text" class="form-control" placeholder="Name" required>
                             <label for="name">Name</label>
                         </div>
                         <div class="form-floating">
-                            <input id="lastname" type="text" class="form-control" placeholder="Lastname" required>
+                            <input name="lastname" type="text" class="form-control" placeholder="Lastname" required>
                             <label for="lastname">Lastname</label>
                         </div>
                         <div class="form-floating">
-                            <input id="tel" type="text" class="form-control" placeholder="Telephone" required>
+                            <input name="tel" type="text" class="form-control" placeholder="Telephone" required>
                             <label for="tel">Telephone</label>
                         </div>
                     </form>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button id="btn-signup" type"submit" form="form-signup" onclick="setSignUpValidate()">Register</button>
+                    <button id="btn-signup" type"submit" form="form-signup">Register</button>
                 </div>
             </div>
         `;
