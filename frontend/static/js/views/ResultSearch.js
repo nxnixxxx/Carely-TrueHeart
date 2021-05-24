@@ -77,16 +77,16 @@ import AbstractView from "./AbstractView.js";
     async getHtml() {
         return `
         <div id="result" class="container p-5">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-            <h1>ResultSearch</h1>
-            <div class="result-search">
-                ${locate}
-                ${displayResult}
-                ${displayResult}
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h1>ResultSearch</h1>
+                <div class="result-search">
+                    ${locate}
+                    ${displayResult}
+                    ${displayResult}
+                </div>
+            
             </div>
-           
         </div>
-    </div>
         `;
     }
 }

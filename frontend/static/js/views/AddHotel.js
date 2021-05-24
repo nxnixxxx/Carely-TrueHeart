@@ -11,10 +11,6 @@ var hotelInfo = `
                     <label for="name">Name</label>
                 </div>
                 <div class="form-floating">
-                    <textarea type="text" class="form-control" id="locate" placeholder="locate" rows="4" cols="50" maxlength="50"></textarea>
-                    <label for="locate">Locate</label>
-                </div>
-                <div class="form-floating">
                     <input type="text" class="form-control" id="searchTextField"  placeholder="Enter a location name" autocomplete="on" runat="server"/>  
                     <label for="locate">Enter a location name</label>
                    <!-- <input id="city2" name="city2" placeholder="City"/>

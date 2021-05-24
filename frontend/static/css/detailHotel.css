@@ -1,0 +1,47 @@
+#detail{
+    width: 75%;
+    background-color: #fcfcff;
+    opacity: 0.9;
+    border: solid #fcfcfc 1px;
+    border-radius: 45px;
+}
+
+.detail-hotel {
+    width: 100%;
+    padding: 15px;
+    max-height: 340px;
+    overflow-y: scroll;
+}
+
+.form-detailHotel input[type="text"] {
+    margin-bottom: 7px;
+    border-radius: 25px;
+    text-indent: 20px;
+}
+.form-detailHotel textarea{
+    margin-bottom: 7px;
+    border-radius: 25px;
+    text-indent: 20px;
+}
+
+#btn-detailHotel{
+    width: 150px;
+    height: 50px;
+    border: solid #5D1616 1px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #5D1616;
+    color: white;
+}
+
+
+#btn-detailHotel:hover{
+    background-color: #5D1616 !important;
+    color: white;
+    border: solid #5D1616 2px !important;
+}
+
+#btn-detailHotel:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #7D4545;
+}

@@ -1,5 +1,38 @@
 import AbstractView from "./AbstractView.js";
 
+
+
+var content =  `
+    <div class="d-flex flex-row justify-content-around align-items-center">
+        
+
+        <div d-flex flex-column justify-content-left align-items-center>
+
+            <img src="static/img/image_test.jpg" alt="image1" class="img-responsive" width="auto" height="300">
+            
+            
+                    <div d-flex flex-row justify-content-left align-items-center>
+                        <textarea maxlenght="10" type="text" class="form-control" id="commentall" placeholder="Comment" rows="4" cols="50" maxlength="100"></textarea>
+                        <div d-flex flex-column justify-content-left align-items-center>
+                            <text maxlenght="10" type="text" class="form-control" id="comment" placeholder="Comment" rows="4" cols="50" maxlength="100"></text>
+                            <button id="btn-detailHotel" type="submit">Send</button>
+                        </div>
+                    </div>
+            
+                
+        </div>
+        <div d-flex flex-column justify-content-around align-items-center>
+            <p>333333333333</p>
+        </div>
+
+    </div>
+    
+
+`;
+
+
+
+
 export default class extends AbstractView {
     constructor(params) {
         super(params);
@@ -8,9 +41,15 @@ export default class extends AbstractView {
 
     async getHtml() {
         return `
+        <div id="detail" class="container p-5">
+            <h1>Hotel Name</h1>
             <div class="d-flex flex-column justify-content-center align-items-center">
-                <h1 class="title ">DetailHotel</h1>
+                <div class="form-detailHotel">
+                    ${content}
+                </div>
+            
             </div>
+        </div>
         `;
     }
 }
