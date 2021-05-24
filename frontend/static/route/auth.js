@@ -1,18 +1,31 @@
 const router = require("express").Router();
 const path = require("path");
+const User = require("../js/model/User");
 
-router.post("/auth", (request, response) => {
+router.post("/auth", async(request, response) => {
     var username = request.body.username;
     var password = request.body.password;
     var name = request.body.name;
     var lastname = request.body.lastname;
-    var tel = request.body.tel;
+    var telephone = request.body.telephone;
 
-    console.log(username + " " + password + " " + name + " " + lastname + " " + tel);
+    console.log(username + " " + password + " " + name + " " + lastname + " " + telephone);
+    
+    // Create Schema and Insert to DB
+    const user = new User({
+        username: username,
+        password: password,
+        name: name,
+        lastname: lastname,
+        telephone: telephone
+    });
 
-    // Insert to DB
-
-    response.sendFile(path.resolve("./", "frontend", "index.html"));
+    try{
+        await user.save();
+        response.sendFile(path.resolve("./", "frontend", "index.html"));
+    }catch(err){
+        response.status(400).send(err);
+    }
 });
 
 module.exports = router;

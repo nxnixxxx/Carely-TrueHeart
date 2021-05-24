@@ -13,7 +13,7 @@ export default class extends AbstractView {
                     <h1>Sign Up</h1>
                 </div>
                 <div class="d-flex flex-row justify-content-center w-100 align-items-center">
-                    <form id="form-signup" class="needs-validation" novalidate method="post" action="/auth">
+                    <form id="form-signup" method="post" action="/auth" class="needs-validation" novalidate>
                         <div class="form-floating">
                             <input name="username"type="text" class="form-control" placeholder="Username" required>
                             <label for="username">Username</label>
@@ -31,13 +31,13 @@ export default class extends AbstractView {
                             <label for="lastname">Lastname</label>
                         </div>
                         <div class="form-floating">
-                            <input name="tel" type="text" class="form-control" placeholder="Telephone" required>
-                            <label for="tel">Telephone</label>
+                            <input name="telephone" type="text" class="form-control" placeholder="Telephone" required>
+                            <label for="telephone">Telephone</label>
                         </div>
                     </form>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button id="btn-signup" type"submit" form="form-signup" onclcik="validate();">Register</button>
+                    <button id="btn-signup" type"submit" form="form-signup" onclick="validate()">Register</button>
                 </div>
             </div>
         `;
