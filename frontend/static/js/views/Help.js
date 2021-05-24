@@ -54,8 +54,13 @@ export default class extends AbstractView {
                     </div>
                 </div>
             </div>
-              
-            <div id="map"></div>
+             
+            
+            <div class="d-flex flex-column justify-content-center align-items-center" >
+                <iframe id="helpcenter-map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.695414174016!2d100.54969021470451!3d13.79722599995679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c3e05ece9ab%3A0x7b5566db33c72072!2z4LmA4Lit4LmH4LihIOC4iOC4leC4uOC4iOC4seC4geC4ow!5e0!3m2!1sth!2sth!4v1621831815297!5m2!1sth!2sth" 
+                width="500" height="250" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
         </div>    
         `;
     }

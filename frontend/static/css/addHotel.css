@@ -29,6 +29,11 @@
     border-radius: 25px;
     text-indent: 20px;
 }
+.form-addHotel input[type="file"] {
+    margin-bottom: 7px;
+    border-radius: 25px;
+    text-indent: 20px;
+}
 
 .form-addHotel input[type="number"] {
     margin-bottom: 7px;

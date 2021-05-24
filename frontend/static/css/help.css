@@ -23,8 +23,11 @@
     margin-left: 42%;
 }
 
-#map {
-    height: 100%;
+#helpcenter-map {
+    padding: 12px;
+    border: 3px rgb(88, 87, 87) dashed;
+    border-radius: 20px;
+    margin-top: 20px;
 }
       
       

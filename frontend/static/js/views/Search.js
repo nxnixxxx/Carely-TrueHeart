@@ -260,11 +260,23 @@ var q12 = `
             <input class="form-check-input" type="radio" name="q12" id="a4" value="option4" required>
             <label class="form-check-label" for="q12"> >1000฿ </label>
         </div>
-        </div><hr style="width:90%;margin: auto">
+        </div><hr style="width:90%;margin: auto; margin-bottom: 10px;">
     </div>
 `;
 
-    
+var locate = `
+    <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="form-floating w-100">
+                <input type="text" class="form-control" type="text" id="searchTextField"  placeholder="Enter a location name" autocomplete="on" runat="server"/>
+                <label for="searchTextField">Location</label>
+                <input id="city2" name="city2" placeholder="City"/>
+                <input id="cityLat" name="cityLat" placeholder="Latitude"/>
+                <input id="cityLng" name="cityLng" placeholder="Longitude"/>  
+            </div>
+        </div><hr style="width:90%;margin: auto">
+    </div>
+`;  
 
 export default class extends AbstractView {
     constructor(params) {
@@ -290,6 +302,7 @@ export default class extends AbstractView {
                         ${q10}
                         ${q11}
                         ${q12}
+                        ${locate}
                     </div><br> 
                     <div class="d-flex">
                         <button id="next" type="submit">Search</button>
