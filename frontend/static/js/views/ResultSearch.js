@@ -16,19 +16,54 @@ import AbstractView from "./AbstractView.js";
                     <button id="next_result" type="submit">Search</button>
                 </div>
         </div>
+        <br>
     </div>
     `; 
 
-    var resultRow1 = `
+    var displayResult = `
         <div class="container">
             <div class="d-flex flex-row justify-content-around align-items-center">
-                <div class="d-flex justify-content-center">1
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="container align-content-center">
+                        <img src="static/img/image_test.jpg" alt="image1" class="img-responsive" width="290" height="250">
+                        <div class="d-flex text-block"> 
+                            <p><img src="static/img/icon_tagprice.png" class="rounded mx-auto d-block " width="25" height="25"></p>
+                            <p>Price < 1000</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-around align-items-center">
+                        <h4>Hotel Name</h4>
+                        <p>City of hotel</p>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-center">2
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="container align-content-center">
+                        <img src="static/img/image_test.jpg" alt="image1" class="img-responsive" width="290" height="250">
+                        <div class="d-flex text-block"> 
+                            <p><img src="static/img/icon_tagprice.png" class="rounded mx-auto d-block " width="25" height="25"></p>
+                            <p>Price < 1000</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-around align-items-center">
+                        <h4>Hotel Name</h4>
+                        <p>City of hotel</p>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-center">3
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="container align-content-center">
+                        <img src="static/img/image_test.jpg" alt="image1" class="img-responsive" width="290" height="250">
+                        <div class="d-flex text-block"> 
+                            <p><img src="static/img/icon_tagprice.png" class="rounded mx-auto d-block " width="25" height="25"></p>
+                            <p>Price < 1000</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-around align-items-center">
+                        <h4>Hotel Name</h4>
+                        <p>City of hotel</p>
+                    </div>
                 </div>
             </div>
+            <br>
         </div>
     `;
 
@@ -46,7 +81,8 @@ import AbstractView from "./AbstractView.js";
             <h1>ResultSearch</h1>
             <div class="result-search">
                 ${locate}
-                ${this.displayResult};
+                ${displayResult}
+                ${displayResult}
             </div>
            
         </div>
