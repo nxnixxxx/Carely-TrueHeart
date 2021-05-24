@@ -1,16 +1,28 @@
 #detail{
-    width: 75%;
+    width: 60%;
     background-color: #fcfcff;
     opacity: 0.9;
     border: solid #fcfcfc 1px;
     border-radius: 45px;
 }
 
+
 .detail-hotel {
     width: 100%;
     padding: 15px;
     max-height: 340px;
     overflow-y: scroll;
+}
+
+#comment_all{
+    margin-top: 7px;
+}
+.detail_all{
+    margin-left: 10px;
+    line-height: 5pt;
+}
+#detail_all{
+    margin-left: 10px;
 }
 
 .form-detailHotel input[type="text"] {
@@ -25,13 +37,15 @@
 }
 
 #btn-detailHotel{
-    width: 120px;
-    height: 35px;
+    width: 160px;
+    height: 37px;
     border: solid #5D1616 1px;
     border-radius: 25px;
-    font-size: 18px;
+    font-size: 16px;
     background-color: #5D1616;
     color: white;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 
 

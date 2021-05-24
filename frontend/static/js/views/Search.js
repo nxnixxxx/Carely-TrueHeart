@@ -270,9 +270,9 @@ var locate = `
             <div class="form-floating w-100">
                 <input type="text" class="form-control" type="text" id="searchTextField"  placeholder="Enter a location name" autocomplete="on" runat="server"/>
                 <label for="searchTextField">Location</label>
-                <input id="city2" name="city2" placeholder="City"/>
-                <input id="cityLat" name="cityLat" placeholder="Latitude"/>
-                <input id="cityLng" name="cityLng" placeholder="Longitude"/>  
+                <input id="city2" name="city2" placeholder="City"/ disabled>
+                <input id="cityLat" name="cityLat" placeholder="Latitude"/ disabled>
+                <input id="cityLng" name="cityLng" placeholder="Longitude"/ disabled>  
             </div>
         </div><hr style="width:90%;margin: auto">
     </div>
