@@ -85,8 +85,6 @@ var envAndService = `
     </div>
 `;
 
-
-
 var typeOfPets = `
     <div class="container">
         <div class="d-flex justify-content-center w-100 align-items-center">
