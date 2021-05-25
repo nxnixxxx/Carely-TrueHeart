@@ -37,7 +37,7 @@ export default class extends AbstractView {
                     </form>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button id="btn-signup" type"submit" form="form-signup" onclick="validate()">Register</button>
+                    <button id="btn-signup" type"submit" form="form-signup" onclick="validate();">Register</button>
                 </div>
             </div>
         `;

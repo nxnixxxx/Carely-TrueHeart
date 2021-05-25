@@ -21,13 +21,27 @@ router.post("/auth", async(request, response) => {
         telephone: telephone
     });
 
-    try{
-        await user.save();
-        console.log(response.send("user" + request.params.id));
-        response.sendFile(path.resolve("./", "frontend", "index.html"));
-    }catch(err){
-        response.status(400).send(err);
+    if(userExist(username)){
+        console.log("User exist " + username);
+        session.autherror = "User Exist";
+    }
+        
+    else{
+        console.log("Insert to DB " + username);
+        try{
+            await user.save();
+            session.username = username
+            console.log("session.username : " + session.username);
+            //response.sendFile(path.resolve("./", "frontend", "index.html"));
+        }catch(err){
+            response.status(400).send(err);
+        }
     }
 });
+
+const userExist = async (in_username) =>{
+    console.log(in_username);
+    return await User.findOne({usernmae: in_username});
+}
 
 module.exports = router;

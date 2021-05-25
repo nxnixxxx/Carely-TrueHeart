@@ -24,3 +24,21 @@ const validate = () => {
             }, false)
         })
 }
+
+window.addEventListener('load', function () {
+    var auth = document.getElementById("authmsg").innerHTML;
+
+    // แก้ตรงนี้
+    var urlParams = new URLSearchParams(window.location.search);
+    console.log(urlParams.toString());
+    
+    var userexist = urlParams.has("userexist");
+    if(userexist){
+        document.getElementById("authmsg").innerHTML = "User exist";
+    }else{
+        document.getElementById("authmsg").innerHTML = "Register Success";
+    }
+  })
+
+  //อิอิ เกทคิวรี่พารามมมมมมมม 
+  //มาเซตไว้นะจ้ะ
