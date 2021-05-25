@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const session = require("express-session");
 const path = require("path");
 const User = require("../js/model/User");
 
@@ -22,6 +23,7 @@ router.post("/auth", async(request, response) => {
 
     try{
         await user.save();
+        console.log(response.send("user" + request.params.id));
         response.sendFile(path.resolve("./", "frontend", "index.html"));
     }catch(err){
         response.status(400).send(err);
