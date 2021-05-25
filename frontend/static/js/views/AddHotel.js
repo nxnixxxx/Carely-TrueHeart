@@ -7,7 +7,7 @@ var hotelInfo = `
             <form class="form-hotelinfo w-100">
                 <h4>Hotel Information : </h4>
                 <div class="form-floating">
-                    <input type="text" class="form-control" id="name" placeholder="name" required>
+                    <input type="text" class="form-control" name="name" placeholder="name" required>
                     <label for="name">Name</label>
                 </div>
                 <div class="form-floating">
@@ -18,19 +18,19 @@ var hotelInfo = `
                     <input id="cityLng" name="cityLng" placeholder="Longitude"/>  -->
                 </div>
                 <div class="form-floating">
-                    <input type="number" class="form-control" id="telephone" placeholder="telephone" maxlength="10";>
+                    <input type="number" class="form-control" name="telephone" placeholder="telephone" maxlength="10";>
                     <label for="tel">Telephone</label>
                 </div>
                 <div class="form-floating">
-                    <input type="text" class="form-control" id="website" placeholder="website">
+                    <input type="text" class="form-control" name="website" placeholder="website">
                     <label for="website">Website</label>
                 </div>
                 <div class="form-floating">
-                    <input type="text" class="form-control" id="price" placeholder="price">
+                    <input type="text" class="form-control" name="price" placeholder="price">
                     <label for="price">Price (The most expensive room rate) </label>
                 </div>
                 <div class="form-floating">
-                    <textarea maxlenght="10" type="text" class="form-control" id="description" placeholder="Description"></textarea>
+                    <textarea maxlenght="10" type="text" class="form-control" name="description" placeholder="Description"></textarea>
                     <label for="description">Description</label>
                 </div>
             </form>
@@ -44,37 +44,37 @@ var envAndService = `
             <form class="form-floating w-100">
                 <h4>Environment and Services : </h4>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="a1" id="a1" value="a">
-                    <label for="website">CCTV 24 hr.</label>
+                    <input class="form-check-input" type="checkbox" name="cctv">
+                    <label for="cctv">CCTV 24 hr.</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="a1" id="a1" value="a">
-                    <label for="website">Swimming</label>
+                    <input class="form-check-input" type="checkbox" name="swimming">
+                    <label for="swimming">Swimming</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="a1" id="a1" value="a">
-                    <label for="website">Pet Food</label>
+                    <input class="form-check-input" type="checkbox" name="food">
+                    <label for="food">Pet Food</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="a1" id="a1" value="a">
-                    <label for="website">Grooming</label>
+                    <input class="form-check-input" type="checkbox" name="grooming">
+                    <label for="grooming">Grooming</label>
                 </div>
                 <p style="font-weight: bold; margin: 0; margin-left: 15px;">Walking : </p>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="a1" id="a1" value="a">
-                    <label for="website">1 times</label>
+                    <input class="form-check-input" type="checkbox" name="walking_1">
+                    <label for="walking_1">1 times</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="a1" id="a1" value="a">
-                    <label for="website">2 times</label>
+                    <input class="form-check-input" type="checkbox" name="walking_2">
+                    <label for="walking_2">2 times</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="a1" id="a1" value="a">
-                    <label for="website">3 times</label>
+                    <input class="form-check-input" type="checkbox" name="walking_3">
+                    <label for="walking_3">3 times</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="a1" id="a1" value="a">
-                    <label for="website">No</label>
+                    <input class="form-check-input" type="checkbox" name="walking_no">
+                    <label for="walking_no">No</label>
                 </div>
             </form>
         </div><br><hr style="width:90%;margin: auto"><br>
@@ -89,68 +89,68 @@ var typeOfPets = `
 
                 <p style="font-weight: bold; margin: 0; margin-left: 15px;">Type of Pets : </p>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="a1" id="a1" value="a">
-                    <label for="website">Dog</label>
+                    <input class="form-check-input" type="radio" name="type" value="dog">
+                    <label for="dog">Dog</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="a1" id="a1" value="a">
-                    <label for="website">Cat</label>
+                    <input class="form-check-input" type="radio" name="type" value="cat">
+                    <label for="cat">Cat</label>
                 </div>
                 
                 <p style="font-weight: bold; margin: 0; margin-left: 15px;">Weight : </p>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="q3" id="a1" value="option1" required>
-                    <label class="form-check-label" for="q3">1-10 kg</label>
+                    <input class="form-check-input" type="checkbox" name="weight_1" required>
+                    <label class="form-check-label" for="weight_1">1-10 kg</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="q3" id="a2" value="option2" required>
-                    <label class="form-check-label" for="q3">10-20 kg</label>
+                    <input class="form-check-input" type="checkbox" name="weight_2" required>
+                    <label class="form-check-label" for="weight_2">10-20 kg</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="q3" id="a3" value="option2" required>
-                    <label class="form-check-label" for="q3">20-30 kg</label>
+                    <input class="form-check-input" type="checkbox" name="weight_3" required>
+                    <label class="form-check-label" for="weight_3">20-30 kg</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="q3" id="a4" value="option2" required>
-                    <label class="form-check-label" for="q3">40 kg+</label>
+                    <input class="form-check-input" type="checkbox" name="weight_4" required>
+                    <label class="form-check-label" for="weight_4">40 kg+</label>
                 </div>
 
                 <p style="font-weight: bold; margin: 0; margin-left: 15px;">Amount of Pets : </p>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="q3" id="a1" value="option1" required>
-                    <label class="form-check-label" for="q3">1-2</label>
+                    <input class="form-check-input" type="radio" name="amount_1" required>
+                    <label class="form-check-label" for="amount_1">1-2</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="q3" id="a2" value="option2" required>
-                    <label class="form-check-label" for="q3">3-4</label>
+                    <input class="form-check-input" type="radio" name="amount_2" required>
+                    <label class="form-check-label" for="amount_2">3-4</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="q3" id="a3" value="option2" required>
-                    <label class="form-check-label" for="q3">4+</label>
+                    <input class="form-check-input" type="radio" name="amount_3" required>
+                    <label class="form-check-label" for="amount_3">4+</label>
                 </div>
                
                 <p style="font-weight: bold; margin: 0; margin-left: 15px;">Vaccine : </p>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="a1" id="a1" value="a">
-                    <label for="website">Yes</label>
+                    <input class="form-check-input" type="radio" name="vaccine">
+                    <label for="vaccine_yes">Yes</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="a1" id="a1" value="a">
-                    <label for="website">No</label>
+                    <input class="form-check-input" type="radio" name="vaccine">
+                    <label for="vaccine_no">No</label>
                 </div>
                 
                 <p style="font-weight: bold; margin: 0; margin-left: 15px;">Years of Pets : </p>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="q3" id="a1" value="option1" required>
-                    <label class="form-check-label" for="q3">0-2 years.</label>
+                    <input class="form-check-input" type="checkbox" name="age_1" required>
+                    <label class="form-check-label" for="age_1">0-2 years.</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="q3" id="a2" value="option2" required>
-                    <label class="form-check-label" for="q3">2-10 years.</label>
+                    <input class="form-check-input" type="checkbox" name="age_2"  required>
+                    <label class="form-check-label" for="age_2">2-10 years.</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="q3" id="a3" value="option2" required>
-                    <label class="form-check-label" for="q3">10 years+.</label>
+                    <input class="form-check-input" type="checkbox" name="age_3"  required>
+                    <label class="form-check-label" for="q3age_3">10 years+.</label>
                 </div>
                 </div><br><hr style="width:90%;margin: auto">
             </form>
