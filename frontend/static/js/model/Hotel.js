@@ -169,10 +169,7 @@ const userSchema = new mongoose.Schema({
         max: 1, 
 
     },
-    date:{
-        type: Date,
-        default: Date.now
-    }
+
 });
 
 module.exports = mongoose.model("Hotel", userSchema);

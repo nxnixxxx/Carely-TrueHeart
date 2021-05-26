@@ -3,7 +3,7 @@ import AbstractView from "./AbstractView.js";
 
 var hotelInfo = `
     <div class="container">
-        <div class="d-flex flex-column justify-content-center w-100 align-items-center">
+        <div class="d-flex flex-column justify-content-center w-100 align-items-center ">
             <form class="form-hotelinfo w-100">
                 <h4>Hotel Information : </h4>
                 <div class="form-floating">
@@ -117,15 +117,15 @@ var typeOfPets = `
 
                 <p style="font-weight: bold; margin: 0; margin-left: 15px;">Amount of Pets : </p>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="amount_1" required>
+                    <input class="form-check-input" type="checkbox" name="amount_1" required>
                     <label class="form-check-label" for="amount_1">1-2</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="amount_2" required>
+                    <input class="form-check-input" type="checkbox" name="amount_2" required>
                     <label class="form-check-label" for="amount_2">3-4</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="amount_3" required>
+                    <input class="form-check-input" type="checkbox" name="amount_3" required>
                     <label class="form-check-label" for="amount_3">4+</label>
                 </div>
                
