@@ -25,20 +25,40 @@ const validate = () => {
         })
 }
 
-window.addEventListener('load', function () {
-    var auth = document.getElementById("authmsg").innerHTML;
-
-    // แก้ตรงนี้
-    var urlParams = new URLSearchParams(window.location.search);
-    console.log(urlParams.toString());
+window.addEventListener('load', () => {
     
-    var userexist = urlParams.has("userexist");
-    if(userexist){
-        document.getElementById("authmsg").innerHTML = "User exist";
-    }else{
-        document.getElementById("authmsg").innerHTML = "Register Success";
+    // Auth
+    if(document.getElementById("auth")){
+        var urlParams = new URLSearchParams(window.location.search);
+        var autherror = urlParams.has("autherror");
+        if(autherror){
+            document.getElementById("authmsg").innerHTML = "User already exist";
+            localStorage.setItem("userSession", "false");
+        }
+            
+        else{
+            document.getElementById("authmsg").innerHTML = "Registration Success";
+            document.getElementById("nav-signin").hidden = true;
+            document.getElementById("nav-signout").hidden = false;
+            localStorage.setItem("userSession", "true");
+        }
+        alert(localStorage.getItem("userSession"));
     }
-  })
 
+    // Signin
+    if(document.getElementById("login")){
+        console.log("Singin")
+    }
+
+    //SignOut
+    if(document.getElementById("signout")){
+        console.log("Singout")
+        document.getElementById("nav-signin").hidden = true;
+        document.getElementById("nav-signout").hidden = false;
+        localStorage.setItem("userSession", "false");
+    }
+
+  });
+  
   //อิอิ เกทคิวรี่พารามมมมมมมม 
   //มาเซตไว้นะจ้ะ

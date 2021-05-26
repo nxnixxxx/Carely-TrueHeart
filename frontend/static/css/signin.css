@@ -23,13 +23,13 @@ input:focus:not([readonly]) {
     margin-bottom: 15px;
 }
 
-#form-signin #username {
+#form-signin input[type="text"] {
   margin-bottom: 7px;
   border-radius: 25px;
   text-indent: 10px;
 }
 
-#form-signin #password{
+#form-signin input[type="password"]{
   margin-bottom: 10px;
   border-radius: 25px;
   text-indent: 10px;

@@ -14,7 +14,6 @@ const app = express();
 app.use("/static", express.static(path.resolve(__dirname, "frontend", "static")));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-
 app.get("/*", (request, ressponse) => {
     ressponse.sendFile(path.resolve(__dirname, "frontend", "index.html"));
 });

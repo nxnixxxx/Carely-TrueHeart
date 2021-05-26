@@ -12,18 +12,18 @@ export default class extends AbstractView {
                 <div class="d-flex flex-column align-items-center">
                     <h1>Login</h1>
                     <div class="d-flex flex-row w-100">
-                        <form id="form-signin" class="needs-validation" novalidate>
+                        <form id="form-signin" method="post" action="/login" class="needs-validation" novalidate>
                             <div class="form-floating">
-                            <input type="text" class="form-control" id="username" placeholder="Username" required>
+                            <input type="text" class="form-control" name"username" placeholder="Username" required>
                             <label for="username">Username</label>
                             </div>
                             <div class="form-floating">
-                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                            <input type="password" class="form-control" name"password" placeholder="Password" required>
                             <label for="password">Password</label>
                             </div>
                         </form>
                         <div class="d-flex align-items-center">
-                            <button id="btn-login" type="submit" form="form-signin" onclick="setSignInValidate()">Login</button>
+                            <button id="btn-login" type="submit" form="form-signin" onclick="validate()">Login</button>
                         </div>
                     </div>
                     <p>Don't have account? Click <a id="signup-link" href="\signup">here</a> to Sign up.</p>

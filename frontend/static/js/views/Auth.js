@@ -9,9 +9,10 @@ export default class extends AbstractView {
     async getHtml() {
         return `
             <div id="auth" class="container p-5">
-                <div class="d-flex flex-column align-items-center">
+                <div class="d-flex flex-row justify-content-center align-items-center">
                     <h1 id="authmsg"></h1>  
-            </div>   
+                </div>  
+            </div>  
         `;
     }
 }

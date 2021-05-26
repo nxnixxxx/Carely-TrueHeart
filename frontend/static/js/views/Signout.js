@@ -8,7 +8,7 @@ export default class extends AbstractView {
 
     async getHtml() {
         return `
-            <div class="d-flex flex-column justify-content-center align-items-center">
+            <div id="signout" class="d-flex flex-column justify-content-center align-items-center">
                 <h1 class="title ">Signout</h1>
             </div>
         `;
