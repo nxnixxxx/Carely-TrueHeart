@@ -42,7 +42,7 @@ window.addEventListener('load', () => {
             document.getElementById("nav-signout").hidden = false;
             localStorage.setItem("userSession", "true");
         }
-        alert(localStorage.getItem("userSession"));
+        //alert(localStorage.getItem("userSession"));
     }
 
     // Signin
@@ -51,12 +51,13 @@ window.addEventListener('load', () => {
     }
 
     //SignOut
-    if(document.getElementById("signout")){
+    document.getElementById("nav-signout").addEventListener("click", () =>{
         console.log("Singout")
         document.getElementById("nav-signin").hidden = true;
         document.getElementById("nav-signout").hidden = false;
+        window.location.href = '/';
         localStorage.setItem("userSession", "false");
-    }
+    }); 
 
   });
   

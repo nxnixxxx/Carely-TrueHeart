@@ -8,16 +8,16 @@ var q1 = `
             </div>
             <div class="d-flex flex-row justify-content-center w-100 align-items-center">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q1" id="a1" value="option1" required>
-                    <label class="form-check-label" for="q1">1-2</label>
+                    <input class="form-check-input" type="radio" name="amount" value="1" required>
+                    <label class="form-check-label" for="amount">1-2</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q1" id="a2" value="option2" required>
-                    <label class="form-check-label" for="q1">3-4</label>
+                    <input class="form-check-input" type="radio" name="amount" value="2" required>
+                    <label class="form-check-label" for="amount">3-4</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="q1" id="a3" value="option3" required>
-                    <label class="form-check-label" for="q1">4+</label>
+                    <input class="form-check-input" type="radio" name="amount" value="3" required>
+                    <label class="form-check-label" for="amount">4+</label>
                 </div>
             </div><hr style="width:90%;margin: auto">
         </div>
@@ -30,11 +30,11 @@ var q2 = `
             </div>
             <div class="d-flex flex-row justify-content-center w-100 align-items-center">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q2" id="a1" value="option1" required>
+                <input class="form-check-input" type="radio" name="pet_type" value="dog" required>
                 <label class="form-check-label" for="q2">Dog</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="q2" id="a2" value="option2" required>
+                <input class="form-check-input" type="radio" name="pet_type" value="cat" required>
                 <label class="form-check-label" for="q2">Cat</label>
             </div>
             </div><hr style="width:90%;margin: auto">
@@ -49,20 +49,20 @@ var q3 = `
         </div>
         <div class="d-flex flex-row justify-content-center w-100 align-items-center">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q3" id="a1" value="option1" required>
-            <label class="form-check-label" for="q3">1-10 kg</label>
+            <input class="form-check-input" type="radio" name="weight" value="1" required>
+            <label class="form-check-label" for="weight">1-10 kg</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q3" id="a2" value="option2" required>
-            <label class="form-check-label" for="q3">10-20 kg</label>
+            <input class="form-check-input" type="radio" name="weight" value="2" required>
+            <label class="form-check-label" for="weight">10-20 kg</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q3" id="a3" value="option2" required>
-            <label class="form-check-label" for="q3">20-30 kg</label>
+            <input class="form-check-input" type="radio" name="weight" value="3" required>
+            <label class="form-check-label" for="weight">20-30 kg</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q3" id="a4" value="option2" required>
-            <label class="form-check-label" for="q3">40 kg+</label>
+            <input class="form-check-input" type="radio" name="weight" value="4" required>
+            <label class="form-check-label" for="weight">40 kg+</label>
         </div>
         </div><hr style="width:90%;margin: auto">
     </div>
@@ -76,12 +76,12 @@ var q4 = `
     </div>
     <div class="d-flex flex-row justify-content-center w-100 align-items-center">
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="q4" id="a1" value="option1" required>
-        <label class="form-check-label" for="q4">Yes</label>
+        <input class="form-check-input" type="radio" name="vaccine" value="1" required>
+        <label class="form-check-label" for="vaccine">Yes</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="q4" id="a2" value="option2" required>
-        <label class="form-check-label" for="q4">No</label>
+        <input class="form-check-input" type="radio" name="vaccine" value="0" required>
+        <label class="form-check-label" for="vaccine">No</label>
     </div>
     </div><hr style="width:90%;margin: auto">
 </div>
@@ -95,16 +95,16 @@ var q5 = `
         </div>
         <div class="d-flex flex-row justify-content-center w-100 align-items-center">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q5" id="a1" value="option1" required>
-            <label class="form-check-label" for="q5">0-2 years.</label>
+            <input class="form-check-input" type="radio" name="age" value="1" required>
+            <label class="form-check-label" for="age">0-2 years.</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q5" id="a2" value="option2" required>
-            <label class="form-check-label" for="q5">2-10 years.</label>
+            <input class="form-check-input" type="radio" name="age" value="2" required>
+            <label class="form-check-label" for="age">2-10 years.</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q5" id="a3" value="option3" required>
-            <label class="form-check-label" for="q5">10 years+.</label>
+            <input class="form-check-input" type="radio" name="age" value="3" required>
+            <label class="form-check-label" for="age">10 years+.</label>
         </div>
         
         </div><hr style="width:90%;margin: auto">
@@ -119,12 +119,12 @@ var q6 = `
         </div>
         <div class="d-flex flex-row justify-content-center w-100 align-items-center">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q6" id="a1" value="option1" required>
-            <label class="form-check-label" for="q6">Yes</label>
+            <input class="form-check-input" type="radio" name="cctv" value="1" required>
+            <label class="form-check-label" for="cctv">Yes</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q6" id="a2" value="option2" required>
-            <label class="form-check-label" for="q6">No</label>
+            <input class="form-check-input" type="radio" name="cctv" value="0" required>
+            <label class="form-check-label" for="cctv">No</label>
         </div>
         </div><hr style="width:90%;margin: auto">
     </div>
@@ -139,12 +139,12 @@ var q7 = `
         </div>
         <div class="d-flex flex-row justify-content-center w-100 align-items-center">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q7" id="a1" value="option1" required>
-            <label class="form-check-label" for="q7">Yes</label>
+            <input class="form-check-input" type="radio" name="air" value="1" required>
+            <label class="form-check-label" for="air">Yes</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q7" id="a2" value="option2" required>
-            <label class="form-check-label" for="q7">No</label>
+            <input class="form-check-input" type="radio" name="air" value="0" required>
+            <label class="form-check-label" for="air">No</label>
         </div>
         </div><hr style="width:90%;margin: auto">
     </div>
@@ -158,20 +158,20 @@ var q8 = `
         </div>
         <div class="d-flex flex-row justify-content-center w-100 align-items-center">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q8" id="a1" value="option1" required>
-            <label class="form-check-label" for="q8">1 time.</label>
+            <input class="form-check-input" type="radio" name="walking" value="1" required>
+            <label class="form-check-label" for="walking">1 time.</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q8" id="a2" value="option2" required>
-            <label class="form-check-label" for="q8">2 times.</label>
+            <input class="form-check-input" type="radio" name="walking" value="2" required>
+            <label class="form-check-label" for="walking">2 times.</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q8" id="a3" value="option3" required>
-            <label class="form-check-label" for="q8">3 times.</label>
+            <input class="form-check-input" type="radio" name="walking" value="3" required>
+            <label class="form-check-label" for="walking">3 times.</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q8" id="a4" value="option4" required>
-            <label class="form-check-label" for="q8">No.</label>
+            <input class="form-check-input" type="radio" name="walking" value="4" required>
+            <label class="form-check-label" for="walking">No.</label>
         </div>
         </div><hr style="width:90%;margin: auto">
     </div>
@@ -185,12 +185,12 @@ var q9 = `
         </div>
         <div class="d-flex flex-row justify-content-center w-100 align-items-center">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q9" id="a1" value="option1" required>
-            <label class="form-check-label" for="q9">Yes</label>
+            <input class="form-check-input" type="radio" name="swimming" value="1" required>
+            <label class="form-check-label" for="swimming">Yes</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q9" id="a2" value="option2" required>
-            <label class="form-check-label" for="q9">No</label>
+            <input class="form-check-input" type="radio" name="swimming"  value="2" required>
+            <label class="form-check-label" for="swimming">No</label>
         </div>
         </div><hr style="width:90%;margin: auto">
     </div>
@@ -203,11 +203,11 @@ var q10 = `
         </div>
         <div class="d-flex flex-row justify-content-center w-100 align-items-center">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q10" id="a1" value="option1" required>
+            <input class="form-check-input" type="radio" name="grooming"  value="1" required>
             <label class="form-check-label" for="q10">Yes</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q10" id="a2" value="option2" required>
+            <input class="form-check-input" type="radio" name="grooming"  value="0" required>
             <label class="form-check-label" for="q10">No</label>
         </div>
         </div><hr style="width:90%;margin: auto">
@@ -222,12 +222,12 @@ var q11 = `
         </div>
         <div class="d-flex flex-row justify-content-center w-100 align-items-center">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q11" id="a1" value="option1" required>
-            <label class="form-check-label" for="q11">Yes</label>
+            <input class="form-check-input" type="radio" name="food" value="1" required>
+            <label class="form-check-label" for="food">Yes</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q11" id="a2" value="option2" required>
-            <label class="form-check-label" for="q11">No</label>
+            <input class="form-check-input" type="radio" name="food" value="0" required>
+            <label class="form-check-label" for="food">No</label>
         </div>
         </div><hr style="width:90%;margin: auto">
     </div>
@@ -241,24 +241,24 @@ var q12 = `
         </div>
         <div class="d-flex flex-row justify-content-center w-100 align-items-center">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q12" id="a1" value="option1" required>
-            <label class="form-check-label" for="q12"> ≤300฿ </label>
+            <input class="form-check-input" type="radio" name="price" value="300" required>
+            <label class="form-check-label" for="price"> ≤300฿ </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q12" id="a2" value="option2" required>
-            <label class="form-check-label" for="q12"> ≤500฿ </label>
+            <input class="form-check-input" type="radio" name="price" value="500" required>
+            <label class="form-check-label" for="price"> ≤500฿ </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q12" id="a3" value="option3" required>
-            <label class="form-check-label" for="q12"> ≤700฿ </label>
+            <input class="form-check-input" type="radio" name="price" value="700" required>
+            <label class="form-check-label" for="price"> ≤700฿ </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q12" id="a4" value="option4" required>
-            <label class="form-check-label" for="q12"> ≤1000฿ </label>
+            <input class="form-check-input" type="radio" name="price" value="1000" required>
+            <label class="form-check-label" for="price"> ≤1000฿ </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="q12" id="a4" value="option4" required>
-            <label class="form-check-label" for="q12"> >1000฿ </label>
+            <input class="form-check-input" type="radio" name="price" value="1001" required>
+            <label class="form-check-label" for="price"> >1000฿ </label>
         </div>
         </div><hr style="width:90%;margin: auto; margin-bottom: 10px;">
     </div>
@@ -268,13 +268,13 @@ var locate = `
     <div class="container">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <div class="form-floating w-100">
-                <input type="text" class="form-control" type="text" id="searchTextField"  placeholder="Enter a location name" autocomplete="on" runat="server"/>
+                <input type="text" class="form-control" type="text" id="searchTextField"  placeholder="Enter a location name" autocomplete="on" runat="server"/ required>
                 <label for="searchTextField">Location</label>
-                <input id="city2" name="city2" placeholder="City"/ disabled>
-                <input id="cityLat" name="cityLat" placeholder="Latitude"/ disabled>
-                <input id="cityLng" name="cityLng" placeholder="Longitude"/ disabled>  
+                <input id="city2" name="city2" placeholder="City"/ hidden>
+                <input id="cityLat" name="cityLat" placeholder="Latitude"/ hidden>
+                <input id="cityLng" name="cityLng" placeholder="Longitude"/ hidden>
             </div>
-        </div><hr style="width:90%;margin: auto">
+        </div>
     </div>
 `;  
 
@@ -289,23 +289,24 @@ export default class extends AbstractView {
             <div id="search" class="container p-5">
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <h1>Search</h1>
-                    <div class="form-search">
-                        ${q1}
-                        ${q2}
-                        ${q3}
-                        ${q4}
-                        ${q5}
-                        ${q6}
-                        ${q7}
-                        ${q8}
-                        ${q9}
-                        ${q10}
-                        ${q11}
-                        ${q12}
-                        ${locate}
-                    </div><br> 
+                    <form id="form-search" method="post" action="/search" class="needs-validation" novalidate>
+                            ${q1}
+                            ${q2}
+                            ${q3}
+                            ${q4}
+                            ${q5}
+                            ${q6}
+                            ${q7}
+                            ${q8}
+                            ${q9}
+                            ${q10}
+                            ${q11}
+                            ${q12}
+                            ${locate}
+                        
+                    </form>
                     <div class="d-flex">
-                        <button id="next" type="submit">Search</button>
+                        <button id="btn-search" form="form-search" type="submit" onclick="validate()">Search</button>
                     </div>  
                 </div>
             </div>

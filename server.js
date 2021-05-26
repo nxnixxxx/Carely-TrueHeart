@@ -5,6 +5,8 @@ const dotenv = require("dotenv");
 
 // Import Route
 const authRoute = require("./frontend/static/route/auth");
+const addhotelRoute = require("./frontend/static/route/addhotel");
+const searchRoute = require("./frontend/static/route/search");
 
 // Init dotenv
 dotenv.config();
@@ -20,6 +22,8 @@ app.get("/*", (request, ressponse) => {
 
 // Route
 app.post("/auth", authRoute);
+app.post("/addhotel", addhotelRoute);
+app.post("/search", searchRoute);
 
 app.listen(3000, () => console.log("Server running ... http://localhost:3000/"));
 

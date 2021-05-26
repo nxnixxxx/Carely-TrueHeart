@@ -6,13 +6,12 @@
     border-radius: 45px;
 }
 
-.form-addHotel {
+#form-addHotel {
     width: 100%;
     padding: 15px;
     max-height: 340px;
     overflow-y: scroll;
 }
-  
   
 .d-flex h1{
     color: black;  
@@ -20,22 +19,24 @@
     margin-bottom: 15px;
 }
 
-.form-addHotel .form-check{
+#form-addHotel .form-check{
     margin-left: 15px;
 }
   
-.form-addHotel input[type="text"] {
+#form-addHotel input[type="text"] {
+    width: 100%;
     margin-bottom: 7px;
     border-radius: 25px;
     text-indent: 20px;
 }
-.form-addHotel input[type="file"] {
+#form-addHotel input[type="file"] {
+    width: 100%;
     margin-bottom: 7px;
     border-radius: 25px;
     text-indent: 20px;
 }
 
-.form-addHotel input[type="number"] {
+#form-addHotel input[type="number"] {
     margin-bottom: 7px;
     border-radius: 25px;
     text-indent: 20px;
@@ -48,21 +49,19 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.form-addHotel textarea{
+#form-addHotel textarea{
+    width: 100%;
     margin-bottom: 7px;
     border-radius: 25px;
     text-indent: 20px;
-}
-
-#locate{
     height: 120px;
     resize: none;
     white-space: nowrap;
     overflow: hidden;
 }
 
-#description{
-    height: 120px;
+#searchTextField{
+    height: 80px;
     resize: none;
     white-space: nowrap;
     overflow: hidden;
