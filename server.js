@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+var bodyParser = require('body-parser');
 
 // Import Route
 const authRoute = require("./frontend/static/route/auth");

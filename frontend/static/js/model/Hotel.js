@@ -76,67 +76,56 @@ const userSchema = new mongoose.Schema({
         type: Number,
         required: true,
         min: 0,
-        max: 1, 
     },
     walking_2:{
         type: Number,
         required: true,
         min: 0,
-        max: 1, 
     },
     walking_3:{
         type: Number,
         required: true,
         min: 0,
-        max: 1, 
     },
     walking_no:{
         type: Number,
         required: true,
         min: 0,
-        max: 1, 
     },
     weight_1:{
         type: Number,
         required: true,
-        min: 0,
-        max: 1, 
+        min: 0 
     },
     weight_2:{
         type: Number,
         required: true,
-        min: 0,
-        max: 1, 
+        min: 0 
     },
     weight_3:{
         type: Number,
         required: true,
-        min: 0,
-        max: 1, 
+        min: 0 
     },
     weight_4:{
         type: Number,
         required: true,
-        min: 0,
-        max: 1, 
+        min: 0 
     },
     age_1:{
         type: Number,
         required: true,
-        min: 0,
-        max: 1, 
+        min: 0 
     },
     age_2:{
         type: Number,
         required: true,
-        min: 0,
-        max: 1, 
+        min: 0 
     },
     age_3:{
         type: Number,
         required: true,
-        min: 0,
-        max: 1, 
+        min: 0 
     },
     vaccine:{
         type: Number,
@@ -152,19 +141,16 @@ const userSchema = new mongoose.Schema({
     amount_1:{
         type: Number,
         required: true,
-        min: 0,
-        max: 1, 
+        min: 0
     },
     amount_2:{
         type: Number,
         required: true,
-        min: 0,
-        max: 1, 
+        min: 0
     },
     amount_3:{ type: Number,
         required: true,
-        min: 0,
-        max: 1, 
+        min: 0
     },
 
 });

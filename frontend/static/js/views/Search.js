@@ -218,7 +218,7 @@ var q11 = `
 <!-- No11 -->
     <div class="container">
         <div class="d-flex justify-content-center w-100 align-items-center">
-        <p>Do you have your own food?</p>
+        <p>Do you want Pet food?</p>
         </div>
         <div class="d-flex flex-row justify-content-center w-100 align-items-center">
         <div class="form-check form-check-inline">
@@ -306,7 +306,7 @@ export default class extends AbstractView {
                         
                     </form>
                     <div class="d-flex">
-                        <button id="btn-search" form="form-search" type="submit" onclick="validate()">Search</button>
+                        <button id="btn-search" form="form-search" type="submit" onclick="">Search</button>
                     </div>  
                 </div>
             </div>
