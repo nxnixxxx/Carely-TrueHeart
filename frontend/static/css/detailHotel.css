@@ -46,18 +46,8 @@
     color: white;
     margin-left: 6px;
     margin-right: 6px;
-}
-
-
-#btn-detailHotel:hover{
-    background-color: #5D1616 !important;
-    color: white;
-    border: solid #5D1616 2px !important;
-}
-
-#btn-detailHotel:focus{
-    outline: 0;
-    box-shadow: 0 0 0 0.1rem #7D4545;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 ::-webkit-scrollbar {

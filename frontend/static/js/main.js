@@ -26,7 +26,7 @@ const validate = () => {
 }
 
 window.addEventListener('load', () => {
-    
+
     // Singin success
     if(document.getElementById("home")){
         var urlParams = new URLSearchParams(window.location.search);
@@ -55,7 +55,6 @@ window.addEventListener('load', () => {
             document.getElementById("nav-signout").hidden = false;
             localStorage.setItem("userSession", "true");
         }
-        //alert(localStorage.getItem("userSession"));
     }
 
     //SignOut

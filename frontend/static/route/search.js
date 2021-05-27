@@ -55,6 +55,10 @@ router.post("/search", async(request, response) => {
             sim = sum/10;
             //console.log("Sim: " + sim);
             hotelId = hotelBody['_id'] ;
+            // End loop key/value in Hotel
+            // [2] add value in 2 dimension array javascript
+            //console.log(idSim["key"+count]);
+            // idSim = idSim.sort((a, b) => a < b ? -1 : 1);
             arridSim.push({
                 "hotelId" : hotelId,
                 "sim" : sim
@@ -76,7 +80,8 @@ router.post("/search", async(request, response) => {
         console.log(arridSim);
     });
 
-    response.sendFile(path.resolve("./", "frontend", "index.html"));
+    response.redirect("/resultsearch");
+    //response.sendFile(path.resolve("./", "frontend", "index.html"));
 });
 
 

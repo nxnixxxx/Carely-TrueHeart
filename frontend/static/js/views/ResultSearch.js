@@ -25,7 +25,7 @@ import AbstractView from "./AbstractView.js";
             <div class="d-flex flex-row justify-content-around align-items-center">
                 <div class="d-flex flex-column justify-content-center">
                     <div class="container align-content-center">
-                        <img src="static/img/image_test.jpg" alt="image1" class="img-responsive" width="290" height="250">
+                        <img onclick="window.location.href='/detailhotel'" src="static/img/image_test.jpg" alt="image1" class="img-responsive" width="290" height="250">
                         <div class="d-flex text-block"> 
                             <p><img src="static/img/icon_tagprice.png" class="rounded mx-auto d-block " width="25" height="25"></p>
                             <p>Price < 1000</p>
@@ -38,7 +38,7 @@ import AbstractView from "./AbstractView.js";
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                     <div class="container align-content-center">
-                        <img src="static/img/image_test.jpg" alt="image1" class="img-responsive" width="290" height="250">
+                        <img onclick="window.location.href='/detailhotel'" src="static/img/image_test.jpg" alt="image1" class="img-responsive" width="290" height="250">
                         <div class="d-flex text-block"> 
                             <p><img src="static/img/icon_tagprice.png" class="rounded mx-auto d-block " width="25" height="25"></p>
                             <p>Price < 1000</p>
@@ -51,7 +51,7 @@ import AbstractView from "./AbstractView.js";
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                     <div class="container align-content-center">
-                        <img src="static/img/image_test.jpg" alt="image1" class="img-responsive" width="290" height="250">
+                        <img onclick="window.location.href='/detailhotel'" src="static/img/image_test.jpg" alt="image1" class="img-responsive" width="290" height="250">
                         <div class="d-flex text-block"> 
                             <p><img src="static/img/icon_tagprice.png" class="rounded mx-auto d-block " width="25" height="25"></p>
                             <p>Price < 1000</p>
@@ -76,15 +76,14 @@ import AbstractView from "./AbstractView.js";
 
     async getHtml() {
         return `
-        <div id="result" class="container p-5">
-            <div class="d-flex flex-column justify-content-center align-items-center">
+        <div id="result" class="container p-4">
+            <div class="d-flex flex-column justify-content-center w-100 align-items-center">
                 <h1>Result Search</h1>
                 <div class="result-search">
                     ${locate}
                     ${displayResult}
                     ${displayResult}
                 </div>
-            
             </div>
         </div>
         `;

@@ -158,7 +158,7 @@ var q8 = `
         </div>
         <div class="d-flex flex-row justify-content-center w-100 align-items-center">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="walking_1" value="1" required>
+            <input class="form-check-input" type="radio" name="walking" value="1" required>
             <label class="form-check-label" for="walking">1 time.</label>
         </div>
         <div class="form-check form-check-inline">
@@ -303,10 +303,9 @@ export default class extends AbstractView {
                             ${q11}
                             ${q12}
                             ${locate}
-                        
                     </form>
                     <div class="d-flex">
-                        <button id="btn-search" form="form-search" type="submit" onclick="">Search</button>
+                        <button id="btn-search" form="form-search" type="submit" onclick="validate()">Search</button>
                     </div>  
                 </div>
             </div>

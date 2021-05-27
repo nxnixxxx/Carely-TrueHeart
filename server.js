@@ -8,6 +8,7 @@ const authRoute = require("./frontend/static/route/auth");
 const addhotelRoute = require("./frontend/static/route/addhotel");
 const searchRoute = require("./frontend/static/route/search");
 const signinRoute = require("./frontend/static/route/signin");
+const resultsearchRoute = require("./frontend/static/route/resultsearch");
 
 // Init dotenv
 dotenv.config();
@@ -25,7 +26,8 @@ app.get("/*", (request, ressponse) => {
 app.post("/auth", authRoute);
 app.post("/addhotel", addhotelRoute);
 app.post("/search", searchRoute);
-app.post("/signin", signinRoute)
+app.post("/signin", signinRoute);
+app.post("/resultsearch", resultsearchRoute);
 
 app.listen(3000, () => console.log("Server running ... http://localhost:3000/"));
 

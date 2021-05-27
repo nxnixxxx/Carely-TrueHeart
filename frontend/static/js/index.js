@@ -21,11 +21,13 @@ const getParams = match => {
     }));
 };
 
+// ปุ่มย้อน
 const navigateTo = url => {
     history.pushState(null, null, url);
     router();
 };
 
+// กำหนด router หน้าบ้านไปยัง view หน้าต่างๆ
 const router = async () => {
     const routes = [
         { path: "/", view: Home },
@@ -41,7 +43,7 @@ const router = async () => {
         { path: "/resultsearch", view: ResultSearch },
     ];
 
-    // Test each route for potential match
+    // ถ้า path ที่ต้องการไปมีอยู่ใน router ขแง view
     const potentialMatches = routes.map(route => {
         return {
             route: route,
@@ -51,6 +53,7 @@ const router = async () => {
 
     let match = potentialMatches.find(potentialMatch => potentialMatch.result !== null);
 
+    // แต่ถ้าไม่ จะไปหน้า home
     if (!match) {
         match = {
             route: routes[0],
