@@ -31,10 +31,13 @@ window.addEventListener('load', () => {
     if(document.getElementById("home")){
         var urlParams = new URLSearchParams(window.location.search);
         var signinSuccess = urlParams.has("signinsuccess");
-        if(signinSuccess){
+        var admin = urlParams.has("admin");
+        if(signinSuccess || admin){
             document.getElementById("nav-signin").hidden = true;
+            document.getElementById("nav-addhotel").hidden = true;
             document.getElementById("nav-signout").hidden = false;
             localStorage.setItem("userSession", "true");
+            if(admin) localStorage.setItem("role", "admin");
         }
     }
 
@@ -64,7 +67,15 @@ window.addEventListener('load', () => {
         document.getElementById("nav-signout").hidden = true;
         window.location.href = '/';
         localStorage.setItem("userSession", "false");
+        if(localStorage.getItem("role") == "admin")
+            document.getElementById("nav-addhotel").hidden = true;
+        localStorage.setItem("role", "");
     }); 
+
+    // Display Add Hotel Menu
+    if(localStorage.getItem("role") == "admin"){
+        document.getElementById("nav-addhotel").hidden = false;
+    }
 
   });
   
