@@ -15,7 +15,7 @@ export default class extends AbstractView {
                 <div class="d-flex justify-content-center w-100 align-items-center">
                     <form id="form-signup" method="post" action="/auth" class="needs-validation" novalidate>
                         <div class="form-floating">
-                            <input name="username"type="text" class="form-control" placeholder="Username" required>
+                            <input name="username" type="text" class="form-control" placeholder="Username" required>
                             <label for="username">Username</label>
                         </div>
                         <div class="form-floating">

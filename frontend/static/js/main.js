@@ -27,16 +27,29 @@ const validate = () => {
 
 window.addEventListener('load', () => {
     
+    // Singin success
+    if(document.getElementById("home")){
+        var urlParams = new URLSearchParams(window.location.search);
+        var signinSuccess = urlParams.has("signinsuccess");
+        if(signinSuccess){
+            document.getElementById("nav-signin").hidden = true;
+            document.getElementById("nav-signout").hidden = false;
+            localStorage.setItem("userSession", "true");
+        }
+    }
+
     // Auth
     if(document.getElementById("auth")){
         var urlParams = new URLSearchParams(window.location.search);
         var autherror = urlParams.has("autherror");
+        var signininvalid = urlParams.has("invalid");
         if(autherror){
             document.getElementById("authmsg").innerHTML = "User already exist";
             localStorage.setItem("userSession", "false");
-        }
-            
-        else{
+        }else if(signininvalid){
+            document.getElementById("authmsg").innerHTML = "Invalid Username/Password";
+            localStorage.setItem("userSession", "false");
+        }else{
             document.getElementById("authmsg").innerHTML = "Registration Success";
             document.getElementById("nav-signin").hidden = true;
             document.getElementById("nav-signout").hidden = false;
@@ -45,16 +58,11 @@ window.addEventListener('load', () => {
         //alert(localStorage.getItem("userSession"));
     }
 
-    // Signin
-    if(document.getElementById("login")){
-        console.log("Singin")
-    }
-
     //SignOut
     document.getElementById("nav-signout").addEventListener("click", () =>{
         console.log("Singout")
-        document.getElementById("nav-signin").hidden = true;
-        document.getElementById("nav-signout").hidden = false;
+        document.getElementById("nav-signin").hidden = false;
+        document.getElementById("nav-signout").hidden = true;
         window.location.href = '/';
         localStorage.setItem("userSession", "false");
     }); 

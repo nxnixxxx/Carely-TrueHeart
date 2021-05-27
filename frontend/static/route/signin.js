@@ -2,33 +2,22 @@ const router = require("express").Router();
 const path = require("path");
 const User = require("../js/model/User");
 
-router.post("/auth", async(request, response) => {
-    var username = request.body.username;
-    var password = request.body.password;
-    var name = request.body.name;
-    var lastname = request.body.lastname;
-    var telephone = request.body.telephone;
+router.post("/signin", async(request, response) => {
+    //response.send(request.body.username + " " + request.body.password);
 
-    console.log(username + " " + password + " " + name + " " + lastname + " " + telephone);
-    
-    // Create Schema and Insert to DB
-    const user = new User({
-        username: username,
-        password: password,
-        name: name,
-        lastname: lastname,
-        telephone: telephone
+
+    const query = User.findOne({username: request.body.username}, (error, user) => {
+        if(error) console.log(error)
+        else{
+            console.log(user.password);
+            if(request.body.password == user.password){
+                response.redirect("/home?signinsuccess");
+            }else{
+                response.redirect("/auth?invalid");
+            }
+        }
     });
-
-    const userexist = await User.findOne({ username: request.body.username });
-    if(userexist) return response.redirect("/auth?autherror");
-
-    try{
-        await user.save();
-        response.sendFile(path.resolve("./", "frontend", "index.html"));
-    }catch(err){
-        response.redirect("/auth?autherror");
-    }
 });
+
 
 module.exports = router;

@@ -158,7 +158,7 @@ var q8 = `
         </div>
         <div class="d-flex flex-row justify-content-center w-100 align-items-center">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="walking" value="1" required>
+            <input class="form-check-input" type="radio" name="walking_1" value="1" required>
             <label class="form-check-label" for="walking">1 time.</label>
         </div>
         <div class="form-check form-check-inline">

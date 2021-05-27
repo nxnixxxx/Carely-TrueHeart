@@ -50,67 +50,19 @@ const userSchema = new mongoose.Schema({
         min: 0,
         max: 1, 
     },
-    walking_1:{
+    walking:{
         type: Number,
         required: true,
         min: 0,
         max: 1, 
     },
-    walking_2:{
+    weight:{
         type: Number,
         required: true,
         min: 0,
         max: 1, 
     },
-    walking_3:{
-        type: Number,
-        required: true,
-        min: 0,
-        max: 1, 
-    },
-    walking_no:{
-        type: Number,
-        required: true,
-        min: 0,
-        max: 1, 
-    },
-    weight_1:{
-        type: Number,
-        required: true,
-        min: 0,
-        max: 1, 
-    },
-    weight_2:{
-        type: Number,
-        required: true,
-        min: 0,
-        max: 1, 
-    },
-    weight_3:{
-        type: Number,
-        required: true,
-        min: 0,
-        max: 1, 
-    },
-    weight_4:{
-        type: Number,
-        required: true,
-        min: 0,
-        max: 1, 
-    },
-    age_1:{
-        type: Number,
-        required: true,
-        min: 0,
-        max: 1, 
-    },
-    age_2:{
-        type: Number,
-        required: true,
-        min: 0,
-        max: 1, 
-    },
-    age_3:{
+    age:{
         type: Number,
         required: true,
         min: 0,
@@ -122,19 +74,7 @@ const userSchema = new mongoose.Schema({
         min: 0,
         max: 1, 
     },
-    amount_1:{
-        type: Number,
-        required: true,
-        min: 0,
-        max: 1, 
-    },
-    amount_2:{
-        type: Number,
-        required: true,
-        min: 0,
-        max: 1, 
-    },
-    amount_3:{ 
+    amount:{
         type: Number,
         required: true,
         min: 0,

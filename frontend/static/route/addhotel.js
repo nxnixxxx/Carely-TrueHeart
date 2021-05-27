@@ -28,50 +28,20 @@ router.post("/addhotel", async(request, response) => {
     var grooming = parseInt(request.body.grooming);
     if(isNaN(grooming)) grooming = "0";
 
-    var walking_1 = parseInt(request.body.walking_1);
-    if(isNaN(walking_1)) walking_1 = "0";
+    var walking = parseInt(request.body.walking);
+    if(isNaN(walking)) walking = "0";
 
-    var walking_2 = parseInt(request.body.walking_2);
-    if(isNaN(walking_2)) walking_2 = "0";
+    var weight = parseInt(request.body.weight);
+    if(isNaN(weight)) weight = "0";
 
-    var walking_3 = parseInt(request.body.walking_3);
-    if(isNaN(walking_3)) walking_3 = "0";
-
-    var walking_no = parseInt(request.body.walking_no);
-    if(isNaN(walking_no)) walking_no = "0";
-
-    var weight_1 = parseInt(request.body.weight_1);
-    if(isNaN(weight_1)) weight_1 = "0";
-
-    var weight_2 = parseInt(request.body.weight_2);
-    if(isNaN(weight_2)) weight_2 = "0";
-
-    var weight_3 = parseInt(request.body.weight_3);
-    if(isNaN(weight_3)) weight_3 = "0";
-
-    var weight_4 = parseInt(request.body.weight_4);
-    if(isNaN(weight_4)) weight_4 = "0";
-
-    var age_1 = parseInt(request.body.age_1);
-    if(isNaN(age_1)) age_1 = "0";
-
-    var age_2 = parseInt(request.body.age_2);
-    if(isNaN(age_2)) age_2 = "0";
-
-    var age_3 = parseInt(request.body.age_3);
-    if(isNaN(age_3)) age_3 = "0";
+    var age = parseInt(request.body.age);
+    if(isNaN(age)) age = "0";
 
     var vaccine = parseInt(request.body.vaccine);
     if(isNaN(vaccine) || vaccine == "no") vaccine = "0";
 
-    var amount_1 = parseInt(request.body.amount_1);
-    if(isNaN(amount_1)) amount_1 = "0";
-
-    var amount_2 = parseInt(request.body.amount_2);
-    if(isNaN(amount_2)) amount_2 = "0";
-
-    var amount_3 = parseInt(request.body.amount_3);
-    if(isNaN(amount_3)) amount_3 = "0";
+    var amount = parseInt(request.body.amount);
+    if(isNaN(amount)) amount = "0";
 
     var pet_type = request.body.pet_type;
 
@@ -93,22 +63,12 @@ router.post("/addhotel", async(request, response) => {
         swimming: swimming,
         food: food,
         grooming: grooming,
-        walking_1: walking_1,
-        walking_2: walking_2,
-        walking_3: walking_3,
-        walking_no: walking_no,
-        weight_1: weight_1,
-        weight_2: weight_2,
-        weight_3: weight_3,
-        weight_4: weight_4,
-        age_1: age_1,
-        age_2: age_2,
-        age_3: age_3,
+        walking: walking,
+        weight: weight,
+        age: age,
         vaccine: vaccine,
         pet_type: pet_type,
-        amount_1: amount_1,
-        amount_2: amount_2,
-        amount_3: amount_3
+        amount: amount,
     });
 
     await addhotel.save();

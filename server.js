@@ -2,12 +2,12 @@ const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-var bodyParser = require('body-parser');
 
 // Import Route
 const authRoute = require("./frontend/static/route/auth");
 const addhotelRoute = require("./frontend/static/route/addhotel");
 const searchRoute = require("./frontend/static/route/search");
+const signinRoute = require("./frontend/static/route/signin");
 
 // Init dotenv
 dotenv.config();
@@ -25,6 +25,7 @@ app.get("/*", (request, ressponse) => {
 app.post("/auth", authRoute);
 app.post("/addhotel", addhotelRoute);
 app.post("/search", searchRoute);
+app.post("/signin", signinRoute)
 
 app.listen(3000, () => console.log("Server running ... http://localhost:3000/"));
 
@@ -37,4 +38,5 @@ mongoose.connect(
     },
     () => {
     console.log("Mongoose Connected!!");
+    
 });

@@ -52,20 +52,20 @@ var envAndService = `
     </div>
     <p style="font-weight: bold; margin: 0; margin-left: 15px;">Walking : </p>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="walking_1" value="1">
-        <label for="walking_1">1 times</label>
+        <input class="form-check-input" type="checkbox" name="walking" value="1">
+        <label for="walking">1 times</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="walking_2" value="2" >
-        <label for="walking_2">2 times</label>
+        <input class="form-check-input" type="checkbox" name="walking" value="2" >
+        <label for="walking">2 times</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="walking_3"  value="3" >
-        <label for="walking_3">3 times</label>
+        <input class="form-check-input" type="checkbox" name="walking"  value="3" >
+        <label for="walking">3 times</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="walking_no" value="4" >
-        <label for="walking_no">No</label>
+        <input class="form-check-input" type="checkbox" name="walking" value="4" >
+        <label for="walking">No</label>
     </div><br><hr style="width:90%;margin-top: 20px;">
 `;
 
@@ -84,34 +84,34 @@ var typeOfPets = `
     
     <p style="font-weight: bold; margin: 0; margin-left: 15px;">Weight : </p>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="weight_1" value="1">
-        <label class="form-check-label" for="weight_1">1-10 kg</label>
+        <input class="form-check-input" type="checkbox" name="weight" value="1">
+        <label class="form-check-label" for="weight">1-10 kg</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="weight_2" value="2">
-        <label class="form-check-label" for="weight_2">10-20 kg</label>
+        <input class="form-check-input" type="checkbox" name="weight" value="2">
+        <label class="form-check-label" for="weight">10-20 kg</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="weight_3" value="3">
-        <label class="form-check-label" for="weight_3">20-30 kg</label>
+        <input class="form-check-input" type="checkbox" name="weight" value="3">
+        <label class="form-check-label" for="weight">20-30 kg</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="weight_4" value="4">
-        <label class="form-check-label" for="weight_4">40 kg+</label>
+        <input class="form-check-input" type="checkbox" name="weight" value="4">
+        <label class="form-check-label" for="weight">40 kg+</label>
     </div>
 
     <p style="font-weight: bold; margin: 0; margin-left: 15px;">Amount of Pets : </p>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="amount_1" value="1">
-        <label class="form-check-label" for="amount_1">1-2</label>
+        <input class="form-check-input" type="checkbox" name="amount" value="1">
+        <label class="form-check-label" for="amount">1-2</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="amount_2" value="2">
-        <label class="form-check-label" for="amount_2">3-4</label>
+        <input class="form-check-input" type="checkbox" name="amount" value="2">
+        <label class="form-check-label" for="amount">3-4</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="amount_3" value="3">
-        <label class="form-check-label" for="amount_3">4+</label>
+        <input class="form-check-input" type="checkbox" name="amount" value="3">
+        <label class="form-check-label" for="amount">4+</label>
     </div>
     
     <p style="font-weight: bold; margin: 0; margin-left: 15px;">Vaccine : </p>
@@ -126,16 +126,16 @@ var typeOfPets = `
     
     <p style="font-weight: bold; margin: 0; margin-left: 15px;">Years of Pets : </p>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="age_1" value="1" >
-        <label class="form-check-label" for="age_1">0-2 years.</label>
+        <input class="form-check-input" type="checkbox" name="age" value="1" >
+        <label class="form-check-label" for="age">0-2 years.</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="age_2" value="2" >
-        <label class="form-check-label" for="age_2">2-10 years.</label>
+        <input class="form-check-input" type="checkbox" name="age" value="2" >
+        <label class="form-check-label" for="age">2-10 years.</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="age_3" value="3" >
-        <label class="form-check-label" for="q3age_3">10 years+.</label>
+        <input class="form-check-input" type="checkbox" name="age" value="3" >
+        <label class="form-check-label" for="age">10 years+.</label>
     </div><br><hr style="width:90%;margin-top: 20px;">
 `;
 
