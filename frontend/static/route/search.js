@@ -4,21 +4,6 @@ const { count } = require("../js/model/Hotel");
 const Hotel = require("../js/model/Hotel");
 
 router.post("/search", async(request, response) => {
-    // var city2 = request.body.city2;
-    // var cityLat = request.body.cityLat;
-    // var cityLng = request.body.cityLng;
-    // var price = parseInt(request.body.price);
-    // var cctv = parseInt(request.body.cctv);
-    // var swimming = parseInt(request.body.swimming);
-    // var food = parseInt(request.body.food);
-    // var grooming = parseInt(request.body.grooming);
-    // var walking = parseInt(request.body.walking);
-    // var weight = parseInt(request.body.weight);
-    // var age = parseInt(request.body.age);
-    // var vaccine = parseInt(request.body.vaccine);
-    // var amount = parseInt(request.body.amount);
-    // var pet_type = request.body.pet_type;
-    // var price = parseInt(request.body.price);
 
     var reqBody = request.body;
     // [1] 2 dimensions array javascript
@@ -31,20 +16,23 @@ router.post("/search", async(request, response) => {
     var sum = 0;
     var hotelBody,hotelId;
 
+    var bodyParser = require('body-parser')
 
+    console.log("Pet Type:" + request.body.pet_type)
     const query = Hotel.find({pet_type: request.body.pet_type}, (error, hotel) => {
+        console.log("Hotel: " + hotel);
         hotel.forEach(function(h) {
             hotelBody = Object.values(h)[5];
             count = count + 1;
-            //console.log(hotelBody);
+            console.log(hotelBody);
             // Start each hotel, Give sum = 0
             sum = 0;
             // console.log("Hotel id: " + hotelBody['_id']);
             Object.keys(hotelBody).forEach((key) => {
                 if(key in reqBody){
-                    //console.log("reqBody value: " + reqBody[key] + " && hotelBody value: " + hotelBody[key]);
+                    console.log("reqBody value: " + reqBody[key] + " && hotelBody value: " + hotelBody[key]);
                     if(reqBody[key] == hotelBody[key]){
-                        //console.log(key + " is Match!! " + reqBody[key] + " " + hotelBody[key]);
+                        console.log(key + " is Match!! " + reqBody[key] + " " + hotelBody[key]);
                         sum = sum + 1;
                     }
                 }else{
@@ -77,6 +65,7 @@ router.post("/search", async(request, response) => {
             }
             return 0;
         });
+
         console.log(arridSim);
     });
 
